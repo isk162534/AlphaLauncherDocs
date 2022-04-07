@@ -84,7 +84,9 @@ title: 주문 제작
 
 ### 사용 권한과 저작권
 
-[AlphaLauncher_License.md](https://github.com/isk162534/AlphaLauncherDocs/blob/main/AlphaLauncher_License.md)
+[License]({{site.url}}/pages/License)
+
+[OpenSourceLicense]({{site.url}}/pages/OpenSourceLicense)
 
 ## 기능
 

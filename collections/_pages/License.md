@@ -7,7 +7,7 @@ title: 라이센스
 - 런처 실행 파일 (바이너리 파일, EXE, DLL 파일) 자유롭게 배포 가능
 - 디컴파일, 리버싱 금지
 - 재판매 금지
-- 개발해드리는 런처는 오픈소스가 아니며 모든 저작권은 개발자에게 있습니다.
+- 개발해드리는 런처는 오픈소스가 아니며 소스코드의 저작권은 개발자에게 있습니다.
 - 완성된 런처는 상업적 이용이 가능하며 자유롭게 배포하실 수 있습니다.
 
 위 라이센스보다 더 많은 권리를 갖기 위해서는 추가 비용이나 별도 계약이 필요할 수 있습니다. 필요하면 말해주세요.
@@ -29,4 +29,4 @@ title: 라이센스
 
 ## 오픈소스 라이센스 전문
 
-[AlphaLauncher_License.txt](https://raw.githubusercontent.com/isk162534/AlphaLauncherDocs/main/AlphaLauncher_License.txt)
+[OpenSourceLicense]({{site.url}}/pages/OpenSourceLicense)
