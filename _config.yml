@@ -1,1 +1,40 @@
-theme: jekyll-theme-cayman
+# Setup
+title:               AlphaLauncherDocs
+tagline:             '커스텀런처'
+description:         '커스텀런처 AlphaLauncher 문서'
+url:                 https://isk162534.github.io/AlphaLauncherDocs/
+baseurl:             ''
+paginate:            5
+collections_dir:     collections
+
+collections:
+  error_posts:
+    output: true
+  pages:
+    output: true
+    order: 
+      - Home.md
+      - ErrorList.html
+      - Pay.md
+      - License.md
+      - OpenSourceLicense.md
+
+# About/contact
+author:
+  name:              ksi123456ab (AlphaBs)
+  email:             ksi123456ab@naver.com
+  discord:           ksi123456ab#3719
+
+# Gems
+#plugins:
+#  - jekyll-paginate
+
+# Custom vars
+version:             1.0.0
+google_analytics_id: #UA-XXXX-Y
+
+github:
+  repo: https://github.com/isk162534/AlphaLauncherDocs
+  
+cmllib:
+  repo: https://github.com/CmlLib/CmlLib.Core
