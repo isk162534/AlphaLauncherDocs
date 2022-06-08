@@ -10,11 +10,14 @@ collections_dir:     collections
 collections:
   error_posts:
     output: true
+  manual_posts:
+    output: true
   pages:
     output: true
     order: 
       - Home.md
       - ErrorList.html
+      - ManualList.html
       - Pay.md
       - License.md
       - OpenSourceLicense.md

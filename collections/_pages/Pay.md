@@ -47,7 +47,7 @@ title: 주문 제작
 ### 사양
 
 - win32 프로그램
-- 닷넷 프레임워크 4.6.2 사용
+- .NET Core 6.0.0 사용
 - WPF 사용
 
 ### 오픈소스 라이브러리
@@ -76,11 +76,8 @@ title: 주문 제작
 
 #### 실행하기 위해 설치되있어야 하는 소프트웨어 :
 
-- .NET Framework 4.6.2 ([최신 윈도우](https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/versions-and-dependencies#version-information)에 기본으로 설치되있습니다)
 - .NET 6.0 Desktop Runtime (간편설치기에서 자동으로 설치합니다)
 - Microsoft WebView2 Runtime (간편설치기에서 자동으로 설치합니다) 
-
-예전 버전의 런처는 닷넷 프레임워크를 사용하고 최신 런처는 모두 닷넷 6.0을 사용합니다.
 
 ### 사용 권한과 저작권
 

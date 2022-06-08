@@ -1,0 +1,16 @@
+---
+layout: page
+title: 메뉴얼 목록
+---
+
+<div class="posts">
+  {% for manual_post in site.manual_posts %}
+  <div class="post">
+    <h2 class="post-title">
+      <a href="{{ manual_post.url | absolute_url }}">
+        {{ manual_post.title }}
+      </a>
+    </h2>
+  </div>
+  {% endfor %}
+</div>
