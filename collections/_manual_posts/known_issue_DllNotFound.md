@@ -59,6 +59,6 @@ https://github.com/microsoft/appcenter-sdk-dotnet/issues/1390
 
 백신에서 해당 파일을 삭제한 경우, 유저가 런처 파일을 건들인 경우가 의심됨. 
 
-2022.09.13
+2022.09.13 업데이트:
 
-2022년 8월 2일 `321b9354215899feb64c98ca53d8801331c30db9` 커밋에서 `PublishSingleFile` 옵션을 `true` 로 바꾼 후 오류 빈도 증가, 해당 옵션을 다시 `false` 로 변경함.
+2022년 8월 2일 `321b9354215899feb64c98ca53d8801331c30db9` 커밋에서 `PublishSingleFile` 옵션을 `true` 로 바꾼 후 오류 발생 빈도가 증가한 것을 발견함. 해당 옵션을 다시 `false` 로 변경함.
