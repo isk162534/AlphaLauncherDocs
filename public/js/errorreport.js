@@ -27,7 +27,7 @@ async function load(id) {
         }
 
         const resBody = await res.json()
-        if (!resBody || !Array.isArray(resBody)) {
+        if (!(resBody && Array.isArray(resBody) && resBody.length > 0)) {
             alert("결과 없음")
             return
         }
