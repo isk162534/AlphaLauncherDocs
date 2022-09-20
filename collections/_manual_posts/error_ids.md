@@ -9,13 +9,13 @@ errorId 는 오류 보고서에 기록되어 오류의 종류를 나타냅니다
 
 WebView2 가 정상적으로 설치되지 않음
 
-[Link](/error_posts/E_A_01)
+[Link]({{site.url}}/error_posts/E_A_01)
 
 ### WebView2InstallError
 
 WebView2 가 정상적으로 설치되지 않음
 
-[Link](/error_posts/E_A_01)
+[Link]({{site.url}}/error_posts/E_A_01)
 
 ### AuthYouException_serverrefuse
 
@@ -33,7 +33,7 @@ WebView2 가 정상적으로 설치되지 않음
 
 서버와의 통신 중에 발생한 오류. InnerException 참고.
 
-[Link](/manual_posts/known_issue_HttpRequestException)
+[Link]({{site.url}}/manual_posts/known_issue_HttpRequestException)
 
 ### IOException_used_by_another_process
 
@@ -77,25 +77,25 @@ IO 작업 실패. errorLog와 InnerException 참고
 
 마인크래프트 크래시 감지
 
-[Link](/error_posts/E_C_02)
+[Link]({{site.url}}/error_posts/E_C_02)
 
 ### MinecraftCrashLog_03
 
 마인크래프트 크래시 감지
 
-[Link](/error_posts/E_C_03)
+[Link]({{site.url}}/error_posts/E_C_03)
 
 ### MinecraftCrashLog_04
 
 마인크래프트 크래시 감지
 
-[Link](/error_posts/E_C_04)
+[Link]({{site.url}}/error_posts/E_C_04)
 
 ### MinecraftCrashLog_05
 
 마인크래프트 크래시 감지
 
-[Link](/error_posts/E_C_05)
+[Link]({{site.url}}/error_posts/E_C_05)
 
 ### MojangException
 
@@ -109,7 +109,7 @@ IO 작업 실패. errorLog와 InnerException 참고
 
 WebView2 가 정상적으로 설치되지 않음
 
-[Link](/error_posts/E_A_01)
+[Link]({{site.url}}/error_posts/E_A_01)
 
 ### Win32Exception
 
@@ -119,7 +119,7 @@ WebView2 가 정상적으로 설치되지 않음
 
 엑스박스 계정이 존재하지 않음
 
-[Link](/error_posts/E_B_03)
+[Link]({{site.url}}/error_posts/E_B_03)
 
 ### XboxAuthException_countryban
 
@@ -129,13 +129,13 @@ WebView2 가 정상적으로 설치되지 않음
 
 나이 인증이 필요한 엑스박스 계정
 
-[Link](/error_posts/E_B_04)
+[Link]({{site.url}}/error_posts/E_B_04)
 
 ### XboxAuthException_familychild
 
 가족 등록이 필요한 엑스박스 계정
 
-[Link](/error_posts/E_B_05)
+[Link]({{site.url}}/error_posts/E_B_05)
 
 ### XboxAuthException_forbidden
 

@@ -34,4 +34,4 @@ System.Net.Http.HttpRequestException: 알려진 호스트가 없습니다. (laun
  ---> System.Net.Sockets.SocketException (11001): 알려진 호스트가 없습니다.
 ```
 
-이 오류의 이름은 HttpRequestException 이지만, InnerException 은 SocketException 이다. SocketException 에 대한 정보는 [known_issue_SocketException.md](./known_issue_SocketException) 문서에서 찾아볼 수 있다. 
+이 오류의 이름은 HttpRequestException 이지만, InnerException 은 SocketException 이다. SocketException 에 대한 정보는 [known_issue_SocketException.md]({{site.url}}/known_issue_SocketException) 문서에서 찾아볼 수 있다. 
