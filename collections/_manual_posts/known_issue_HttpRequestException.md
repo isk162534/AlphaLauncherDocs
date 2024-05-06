@@ -26,7 +26,7 @@ System.Net.Http.HttpRequestException: Response status code does not indicate suc
 
 ### InnerException 확인하기
 
-오류 로그 두번째 줄에 ---> 으로 시작하는 부분이 InnerException 을 뜻한다. InnerException 은 현재 발생한 오류의 원인이 되는 오류를 뜻한다. 만약 InnerException 이 존재하는 경우, InnerException 을 더 중점적으로 조사해 봄으로써 더 근본적인 오류의 원인을 찾을 수 있다. 
+오류 로그 두번째 줄에 ---> 으로 시작하는 부분이 InnerException 을 뜻한다. InnerException 은 현재 발생한 오류의 원인이 되는 오류를 뜻한다. 만약 InnerException 이 존재하는 경우, InnerException 를 자세히 조사해보길 바람.
 
 예시:
 ```
