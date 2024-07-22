@@ -6,23 +6,12 @@ title: (known issue) hs_err_pid######.log
 https://gaming.stackexchange.com/questions/96496/is-there-a-list-of-error-codes-for-minecraft
 
 ## EXCEPTION_ACCESS_VIOLATION (0xc0000005), SIGSEGV (0xb)
+
 An access violation/segmentation fault occurs when a program attempts to access memory that it has not been assigned. This is a very broad type of error with many possible causes, but it is almost always the result of a software bug.
 
 Find the part of the crash log that states "problematic frame", and see if it matches any of the ones found below:
 
-### Problematic frame: ig4icd32.dll, ig4dev32.dll, ig7icd64.dll, ig7dev64.dll, ig9icd64.dll
-
-인텔 내장 그래픽 드라이버 문제. 대부분 노트북
-
-그래픽 드라이버 업데이트 혹은 버전 변경 후 해결
-
-외장 그래픽이 설치된 노트북이라면 외장 그래픽 사용하는게 좋다.
-
-[MinecraftForum](https://www.minecraftforum.net/forums/support/java-edition-support/3190528-solution-for-ig-icd64-dll-crash-on-older-versions)
-
-[MC-32606](https://bugs.mojang.com/browse/MC-32606)
-
-#### case 1
+### case 1
 
 ```
 #
@@ -199,10 +188,88 @@ Other Threads:
   0x00000000225d5800 WatcherThread [stack: 0x0000000022ad0000,0x0000000022bd0000] [id=12412]
 ```
 
+인텔 내장 그래픽 드라이버 문제. 대부분 노트북
+
+그래픽 드라이버 업데이트 혹은 버전 변경 후 해결
+
+외장 그래픽이 설치된 노트북이라면 외장 그래픽 사용하는게 좋다.
+
+[MinecraftForum](https://www.minecraftforum.net/forums/support/java-edition-support/3190528-solution-for-ig-icd64-dll-crash-on-older-versions)
+
+[MC-32606](https://bugs.mojang.com/browse/MC-32606)
+
 리소스팩의 특정 폰트를 렌더링하지 못해서 발생하는 문제. 그래픽 카드 드라이버 업데이트 후 해결
 
-## Problematic frame: atioglx1.dll, atioglx2.dll, atioglx3.dll, atioglxx.dll
+로그
 
-ATi OpenGL 드라이버 관련 문제
+```
+ig4icd32.dll
+ig4dev32.dll
+ig7icd64.dll
+ig7dev64.dll
+ig8dev64.dll
+ig9icd64.dll // 가장 흔함
+ig11icd64.dll
+ig12icd64.dll
+ig75icd64.dll
 
-드라이버 업데이트 혹은 다운그레이드
+atioglx1.dll
+atioglx2.dll
+atioglx3.dll
+atioglxx.dll
+atio6axx.dll
+
+nvoglv64.dll
+```
+
+### case 2
+
+```
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x000000007103dda0, pid=26936, tid=29096
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_51-b16) (build 1.8.0_51-b16)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.51-b03 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# [thread 3960 also had an error]
+V  [jvm.dll+0xadda0]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# An error report file with more information is saved as:
+# C:\Users\User\AppData\Roaming\PixelmonScarlet\game\hs_err_pid26936.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+Uhh, nope. It's just AL lib: (EE) alc_cleanup: 1 device not closed
+```
+
+### case 3
+
+```
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x0000000029d3a882, pid=8296, tid=7400
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_51-b16) (build 1.8.0_51-b16)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.51-b03 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# C  0x0000000029d3a882
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# An error report file with more information is saved as:
+# C:\Users\ADMIN\AppData\Roaming\PixelmonScarlet\game\hs_err_pid8296.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+Uhh, nope. It's just AL lib: (EE) alc_cleanup: 1 device not closed
+```
+
