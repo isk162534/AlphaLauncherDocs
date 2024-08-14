@@ -3,8 +3,8 @@ title:               AlphaLauncherDocs
 tagline:             '커스텀런처'
 description:         '커스텀런처 AlphaLauncher 문서'
 url:                 https://isk162534.github.io
-baseurl:             AlphabetLauncherDocs
-baseurl:             ''
+baseurl:             /AlphabetLauncherDocs
+basewebsite:         /AlphabetLauncherDocs
 paginate:            5
 collections_dir:     collections
 
