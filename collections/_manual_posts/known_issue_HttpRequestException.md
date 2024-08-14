@@ -26,4 +26,4 @@ System.Net.Http.HttpRequestException: Response status code does not indicate suc
 
 ### InnerException 확인하기
 
-오류 로그 두번째 줄에 ---> 으로 시작하는 부분이 InnerException 이다. HttpRequestException 의 InnerException 은 대부분 SocketException 이며, 자세한 정보는 [SocketException]({{site.url}}/manual_posts/known_issue_SocketException) 에서 확인 가능
+오류 로그 두번째 줄에 ---> 으로 시작하는 부분이 InnerException 이다. HttpRequestException 의 InnerException 은 대부분 SocketException 이며, 자세한 정보는 [SocketException]({{ '/manual_posts/known_issue_SocketException' | relative_url }}) 에서 확인 가능

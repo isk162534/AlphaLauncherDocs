@@ -14,4 +14,4 @@ title: 라이센스
 
 ## 오픈소스 라이센스 전문
 
-[OpenSourceLicense]({{site.url}}/pages/OpenSourceLicense)
+[OpenSourceLicense]({{ '/pages/OpenSourceLicense' | relative_url }})

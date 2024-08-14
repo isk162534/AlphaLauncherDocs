@@ -1,3 +1,8 @@
+---
+layout: page
+title: 거래 방법
+---
+
 # AlphabetLauncher 커스텀 런처 기획서
 
 ### 의뢰자
