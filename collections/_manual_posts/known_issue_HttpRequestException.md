@@ -26,12 +26,4 @@ System.Net.Http.HttpRequestException: Response status code does not indicate suc
 
 ### InnerException 확인하기
 
-오류 로그 두번째 줄에 ---> 으로 시작하는 부분이 InnerException 을 뜻한다. InnerException 은 현재 발생한 오류의 원인이 되는 오류를 뜻한다. 만약 InnerException 이 존재하는 경우, InnerException 를 자세히 조사해보길 바람.
-
-예시:
-```
-System.Net.Http.HttpRequestException: 알려진 호스트가 없습니다. (launchermeta.mojang.com:443)
- ---> System.Net.Sockets.SocketException (11001): 알려진 호스트가 없습니다.
-```
-
-이 오류의 이름은 HttpRequestException 이지만, InnerException 은 SocketException 이다. SocketException 에 대한 정보는 [known_issue_SocketException.md]({{site.url}}/known_issue_SocketException) 문서에서 찾아볼 수 있다. 
+오류 로그 두번째 줄에 ---> 으로 시작하는 부분이 InnerException 이다. HttpRequestException 의 InnerException 은 대부분 SocketException 이며, 자세한 정보는 [SocketException]({{site.url}}/manual_posts/known_issue_SocketException) 에서 확인 가능
