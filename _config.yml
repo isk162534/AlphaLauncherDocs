@@ -17,6 +17,8 @@ collections:
     output: true
     order: 
       - Home.md
+      - demo.md
+      - Landing.html
       - ErrorList.html
       - ManualList.html
       - ErrorReport.md
